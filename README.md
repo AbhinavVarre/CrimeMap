@@ -19,7 +19,7 @@ Original App Design Project
 - **Mobile:** Mobile
 - **Story:**
 - **Market:** Anyone who lives in NYC or is curious about NYC crime data can use this app. Users can check location and type of crime committed in the map. 
-- **Habit:**
+- **Habit:** Users can look at crime incidents that have happened throughout the day. Users can explore crime records in any area around the city. 
 - **Scope:**
 
 ## Product Spec
