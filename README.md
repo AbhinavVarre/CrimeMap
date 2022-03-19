@@ -11,7 +11,7 @@ Original App Design Project
 
 ## Overview
 ### Description
-[Description of your app]
+This app allows users to interact and digest real - time crime data and police responses in their area. The interactive map allows users to view the location of the calls, allowing users to avoid areas of potential conflict, and monitor situations in real time. 
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
