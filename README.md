@@ -1,7 +1,7 @@
-Original App Design Project 
+Original App Design Project - README Template
 ===
 
-# CrimeMap
+# APP_NAME_HERE
 
 ## Table of Contents
 1. [Overview](#Overview)
