@@ -17,7 +17,9 @@ Original App Design Project
 [Evaluation of your app across the following attributes]
 - **Category:** Travel/Safety
 - **Mobile:** Mobile
-- **Story:**
+- **Story:** Allow user to check the criminal incident happening or happened recently.
+             Allow user to report the criminal incident. 
+
 - **Market:** Anyone who lives in NYC or is curious about NYC crime data can use this app. Users can check location and type of crime committed in the map. 
 - **Habit:** Users can look at crime incidents that have happened throughout the day. Users can explore crime records in any area around the city. 
 - **Scope:**
