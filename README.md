@@ -15,10 +15,10 @@ Original App Design Project
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
+- **Category:** Travel/Safety
+- **Mobile:** Mobile
 - **Story:**
-- **Market:**
+- **Market:** Anyone who lives in NYC or is curious about NYC crime data can use this app. Users can check location and type of crime committed in the map. 
 - **Habit:**
 - **Scope:**
 
