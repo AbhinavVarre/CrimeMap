@@ -30,7 +30,7 @@ This app allows users to interact and digest real - time crime data and police r
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
+* An interactive map that users can drag, zoom in on, etc.
 * ...
 
 **Optional Nice-to-have Stories**
@@ -40,8 +40,8 @@ This app allows users to interact and digest real - time crime data and police r
 
 ### 2. Screen Archetypes
 
-* [list first screen here]
-   * [list associated required story here]
+* Map
+   * Interactive Map
    * ...
 * [list second screen here]
    * [list associated required story here]
