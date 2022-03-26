@@ -55,16 +55,20 @@ This app allows users to interact and digest real - time crime data and police r
 * map tab 
 * table tab
 * post tab
+* information tab
 
 **Flow Navigation** (Screen to Screen)
 
 * map screen
    * post tab
    * pop up information tab
+   
 * view table screen
    * information tab
    * post tab
-* detail screen
+* information/ detail screen
+  * map tab (back)
+  * table tab (back)
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
