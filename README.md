@@ -43,26 +43,28 @@ This app allows users to interact and digest real - time crime data and police r
 * Map
    * Interactive Map
    * ...
-* [list second screen here]
-   * [list associated required story here]
+* Table Section
+   * ViewTable shows the crimal happened around you
    * ...
 
 ### 3. Navigation
 
 **Tab Navigation** (Tab to Screen)
 
-* [fill out your first tab]
-* [fill out your second tab]
-* [fill out your third tab]
+* login tab 
+* map tab 
+* table tab
+* post tab
 
 **Flow Navigation** (Screen to Screen)
 
-* [list first screen here]
-   * [list screen navigation here]
-   * ...
-* [list second screen here]
-   * [list screen navigation here]
-   * ...
+* map screen
+   * post tab
+   * pop up information tab
+* view table screen
+   * information tab
+   * post tab
+* detail screen
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
