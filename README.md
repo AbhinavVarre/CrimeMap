@@ -94,7 +94,8 @@ This app allows users to interact and digest real - time crime data and police r
 ### Networking
 - Login Screen
   - (Create/POST) Create a new User
-      '''let query = PFQuery(className:"Post")
+    '''Swift
+      let query = PFQuery(className:"Post")
       query.whereKey("author", equalTo: currentUser)
       query.order(byDescending: "createdAt")
       query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
@@ -103,7 +104,8 @@ This app allows users to interact and digest real - time crime data and police r
          } else if let posts = posts {
             print("Successfully retrieved \(posts.count) posts.")
         // TODO: Do something with posts...
-   }'''
+   }
+   '''
 
 - Crime List Screen
   - (Read/GET) Query all crimes and data(including author)
