@@ -73,6 +73,7 @@ This app allows users to interact and digest real - time crime data and police r
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+![IMG_3615](https://user-images.githubusercontent.com/62863377/161169734-2d85ee2d-3484-49a9-b862-cb0188eeeed1.jpg)
 
 ### [BONUS] Digital Wireframes & Mockups
 
