@@ -92,6 +92,17 @@ This app allows users to interact and digest real - time crime data and police r
 | IncidentTime   | DateTime         | Time when the incident happened
 | updatedTime    | DateTime         | Time when incident is last updated
 ### Networking
-- [Add list of network requests by screen ]
+- Login Screen
+  - (Create/POST) Create a new User
+- Crime List Screen
+  - (Read/GET) Query all crimes and data(including author)
+- Map View Screen
+  - (Read/GET) Query all crimes based on location
+  -(Delete) Delete all old posts after a number of days
+- Post Updates Screen
+  - (Create/POST) Create a new Crime Post Object
+- Settings Screen
+  -(Update/PUT) Update User Password
+
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
