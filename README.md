@@ -82,10 +82,15 @@ This app allows users to interact and digest real - time crime data and police r
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-|   Property    |     Type         | Description
-| ------------- | ---------------- | -------------
-| IncidentId    | String           |
-| Content Cell  | Pointer to User  |
+|   Property     |     Type         | Description
+| -------------- | ---------------- | -------------
+| IncidentId     | String           | unique id for the incident
+|   Creator      | Pointer to User  | incident creator
+| IncidentDetail | String           | Detail informations of incidents
+| updatedCount   | Number           | number of updated information
+| commentsCount  | Number           | number of comments posted
+| IncidentTime   | DateTime         | Time when the incident happened
+| updatedTime    | DateTime         | Time when incident is last updated
 ### Networking
 - [Add list of network requests by screen ]
 - [Create basic snippets for each Parse network request]
