@@ -165,8 +165,8 @@ This app allows users to interact and digest real - time crime data and police r
        ```
   - (Update/Put) Log Out
        ```swift
-              PFUser.logOut()
-         ```
+          PFUser.logOut()
+        ```
 
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
