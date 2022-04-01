@@ -148,8 +148,25 @@ This app allows users to interact and digest real - time crime data and police r
   
 - Post Updates Screen
   - (Create/POST) Create a new Crime Post Object
+     ```swift
+          let myPost = PFObject(className:"Crime")
+          myPost["title"] = "Armed Assailaint"
+          myPost["content"] = "At around 4:15...."
+       ```
 - Settings Screen
   - (Update/PUT) Update User Password
+      ```swift
+          var currentUser = PFUser.current()
+          if currentUser != nil {
+            currentUser.password = "newPassword"
+          } else {
+            // Go back to login
+          }
+       ```
+  - (Update/Put) Log Out
+       ```swift
+              PFUser.logOut()
+         ```
 
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
