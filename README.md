@@ -108,12 +108,44 @@ This app allows users to interact and digest real - time crime data and police r
             }
           }
        ```
-
+  - (Read/GET) Log User in
+      ```swift
+          PFUser.logInWithUsername(inBackground:"myname", password:"mypass") {
+          (user: PFUser?, error: Error?) -> Void in
+          if user != nil {
+            // Do stuff after successful login.
+          } else {
+            // The login failed. Check error to see why.
+          }
+        }
+       ```
 - Crime List Screen
   - (Read/GET) Query all crimes and data(including author)
+      ```swift
+          let query = PFQuery(className: "Crimes")
+          let crimesArr = query.findObjects()
+       ```
 - Map View Screen
   - (Read/GET) Query all crimes based on location
-  -(Delete) Delete all old posts after a number of days
+      ```swift
+          let query = PFQuery(className: "Crimes")
+          query.whereKey("location", equalTo: "target location")
+          let crimesArr = query.findObjects()
+       ```
+  - (Delete) Delete all old posts after a number of days
+      ```swift
+          let query = PFQuery(className: "Crimes")
+          query.whereKey("location", equalTo: "target location")
+          let crimesArr = query.findObjects()
+          PFObject.deleteAll(inBackground: crimesArr) { (succeeded, error) in
+          if (succeeded) {
+              // All of the crime objects were successfully deleted
+          } else {
+              // Could not delete
+          }
+        }
+       ```
+  
 - Post Updates Screen
   - (Create/POST) Create a new Crime Post Object
 - Settings Screen
