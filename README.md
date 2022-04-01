@@ -102,7 +102,7 @@ This app allows users to interact and digest real - time crime data and police r
 - Post Updates Screen
   - (Create/POST) Create a new Crime Post Object
 - Settings Screen
-  -(Update/PUT) Update User Password
+  - (Update/PUT) Update User Password
 
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
