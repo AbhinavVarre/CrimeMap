@@ -31,12 +31,14 @@ This app allows users to interact and digest real - time crime data and police r
 **Required Must-have Stories**
 
 * An interactive map that users can drag, zoom in on, etc.
-* ...
+* User is able to sign up, sign in and sign out.
+* User is able to post incidents.
+* Buttons at Map page and table page that can redirect to the detail page
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* User is able to update/ comment the incidents.
+* Pictures related to the incident could shows on the map page
 
 ### 2. Screen Archetypes
 
