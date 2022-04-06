@@ -41,13 +41,16 @@ This app allows users to interact and digest real - time crime data and police r
 * Pictures related to the incident could shows on the map page
 
 ### 2. Screen Archetypes
-
-* Map
-   * Interactive Map
-   * ...
-* Table Section
-   * ViewTable shows the crimal happened around you
-   * ...
+* Login
+* Map Screen
+   * Interactive Map shows the criminal
+   * Redirect to detail screen
+* Table Screen
+   * ViewTable shows the criminal happened around you
+   * Redirect to detail screen
+* Detail Screen
+   * Back to Table/Map screen
+   * Shows detail of the incident
 
 ### 3. Navigation
 
