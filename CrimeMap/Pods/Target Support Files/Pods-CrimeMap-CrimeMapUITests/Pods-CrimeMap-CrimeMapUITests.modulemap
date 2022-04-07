@@ -1,0 +1,6 @@
+framework module Pods_CrimeMap_CrimeMapUITests {
+  umbrella header "Pods-CrimeMap-CrimeMapUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

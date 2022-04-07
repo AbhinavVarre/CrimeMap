@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8CDD0D2027FE7D5600BDB4EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D1F27FE7D5600BDB4EC /* AppDelegate.swift */; };
+		8CDD0D2227FE7D5600BDB4EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D2127FE7D5600BDB4EC /* SceneDelegate.swift */; };
+		8CDD0D2727FE7D5600BDB4EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDD0D2527FE7D5600BDB4EC /* Main.storyboard */; };
+		8CDD0D2927FE7D5900BDB4EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CDD0D2827FE7D5900BDB4EC /* Assets.xcassets */; };
+		8CDD0D2C27FE7D5900BDB4EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDD0D2A27FE7D5900BDB4EC /* LaunchScreen.storyboard */; };
+		8CDD0D3727FE7D5A00BDB4EC /* CrimeMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D3627FE7D5A00BDB4EC /* CrimeMapTests.swift */; };
+		8CDD0D4127FE7D5A00BDB4EC /* CrimeMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D4027FE7D5A00BDB4EC /* CrimeMapUITests.swift */; };
+		8CDD0D4327FE7D5A00BDB4EC /* CrimeMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D4227FE7D5A00BDB4EC /* CrimeMapUITestsLaunchTests.swift */; };
+		8CDD0D5227FE866200BDB4EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D5127FE866200BDB4EC /* LoginViewController.swift */; };
+		8CDD0D5627FE8AA600BDB4EC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D5527FE8AA600BDB4EC /* FeedViewController.swift */; };
+		8E44A91A8362BA6388445D2A /* Pods_CrimeMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42185C0B117BB81DC3A2470 /* Pods_CrimeMap.framework */; };
+		AED7177D0DA3DCCD96D78C78 /* Pods_CrimeMap_CrimeMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F5DB30E3D8A490555CB0FA /* Pods_CrimeMap_CrimeMapTests.framework */; };
+		B8FB121712F6D3CDFE414B32 /* Pods_CrimeMap_CrimeMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F838923BF14F621F7DB3C15 /* Pods_CrimeMap_CrimeMapUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8CDD0D3327FE7D5A00BDB4EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CDD0D1427FE7D5600BDB4EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CDD0D1B27FE7D5600BDB4EC;
+			remoteInfo = CrimeMap;
+		};
+		8CDD0D3D27FE7D5A00BDB4EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8CDD0D1427FE7D5600BDB4EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CDD0D1B27FE7D5600BDB4EC;
+			remoteInfo = CrimeMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05ADC8DC01901A6493C4BC0A /* Pods-CrimeMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMapTests.release.xcconfig"; path = "Target Support Files/Pods-CrimeMapTests/Pods-CrimeMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		152225FCCBE7524292417550 /* Pods-CrimeMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMapTests.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMapTests/Pods-CrimeMapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		16212FF1A90E9D1607730BE4 /* Pods-CrimeMap-CrimeMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap-CrimeMapTests.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMap-CrimeMapTests/Pods-CrimeMap-CrimeMapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5315D2DCFA4CC8285E8C6EF3 /* Pods-CrimeMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMap/Pods-CrimeMap.debug.xcconfig"; sourceTree = "<group>"; };
+		5F838923BF14F621F7DB3C15 /* Pods_CrimeMap_CrimeMapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrimeMap_CrimeMapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C359FC4E785248DC6632DCC /* Pods-CrimeMap-CrimeMapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap-CrimeMapUITests.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMap-CrimeMapUITests/Pods-CrimeMap-CrimeMapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CDD0D1C27FE7D5600BDB4EC /* CrimeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrimeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CDD0D1F27FE7D5600BDB4EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8CDD0D2127FE7D5600BDB4EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8CDD0D2627FE7D5600BDB4EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8CDD0D2827FE7D5900BDB4EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8CDD0D2B27FE7D5900BDB4EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8CDD0D2D27FE7D5900BDB4EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8CDD0D3227FE7D5A00BDB4EC /* CrimeMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrimeMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CDD0D3627FE7D5A00BDB4EC /* CrimeMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeMapTests.swift; sourceTree = "<group>"; };
+		8CDD0D3C27FE7D5A00BDB4EC /* CrimeMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrimeMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CDD0D4027FE7D5A00BDB4EC /* CrimeMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeMapUITests.swift; sourceTree = "<group>"; };
+		8CDD0D4227FE7D5A00BDB4EC /* CrimeMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8CDD0D5127FE866200BDB4EC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8CDD0D5527FE8AA600BDB4EC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		97F5DB30E3D8A490555CB0FA /* Pods_CrimeMap_CrimeMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrimeMap_CrimeMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BE2BAF8DFF0A57B394E0748 /* Pods-CrimeMap-CrimeMapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap-CrimeMapUITests.release.xcconfig"; path = "Target Support Files/Pods-CrimeMap-CrimeMapUITests/Pods-CrimeMap-CrimeMapUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A519664AC48D75DFC241FC59 /* Pods-CrimeMap-CrimeMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap-CrimeMapTests.release.xcconfig"; path = "Target Support Files/Pods-CrimeMap-CrimeMapTests/Pods-CrimeMap-CrimeMapTests.release.xcconfig"; sourceTree = "<group>"; };
+		C4C9C523E227631A5EC3269D /* Pods-CrimeMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap.release.xcconfig"; path = "Target Support Files/Pods-CrimeMap/Pods-CrimeMap.release.xcconfig"; sourceTree = "<group>"; };
+		F42185C0B117BB81DC3A2470 /* Pods_CrimeMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrimeMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8CDD0D1927FE7D5600BDB4EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E44A91A8362BA6388445D2A /* Pods_CrimeMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CDD0D2F27FE7D5A00BDB4EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AED7177D0DA3DCCD96D78C78 /* Pods_CrimeMap_CrimeMapTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CDD0D3927FE7D5A00BDB4EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8FB121712F6D3CDFE414B32 /* Pods_CrimeMap_CrimeMapUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		362C9C7364322EF0C35956E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F42185C0B117BB81DC3A2470 /* Pods_CrimeMap.framework */,
+				5F838923BF14F621F7DB3C15 /* Pods_CrimeMap_CrimeMapUITests.framework */,
+				97F5DB30E3D8A490555CB0FA /* Pods_CrimeMap_CrimeMapTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8CDD0D1327FE7D5600BDB4EC = {
+			isa = PBXGroup;
+			children = (
+				8CDD0D1E27FE7D5600BDB4EC /* CrimeMap */,
+				8CDD0D3527FE7D5A00BDB4EC /* CrimeMapTests */,
+				8CDD0D3F27FE7D5A00BDB4EC /* CrimeMapUITests */,
+				8CDD0D1D27FE7D5600BDB4EC /* Products */,
+				CF23FF23B65D4E67112414F1 /* Pods */,
+				362C9C7364322EF0C35956E5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8CDD0D1D27FE7D5600BDB4EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD0D1C27FE7D5600BDB4EC /* CrimeMap.app */,
+				8CDD0D3227FE7D5A00BDB4EC /* CrimeMapTests.xctest */,
+				8CDD0D3C27FE7D5A00BDB4EC /* CrimeMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8CDD0D1E27FE7D5600BDB4EC /* CrimeMap */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD0D1F27FE7D5600BDB4EC /* AppDelegate.swift */,
+				8CDD0D2127FE7D5600BDB4EC /* SceneDelegate.swift */,
+				8CDD0D5127FE866200BDB4EC /* LoginViewController.swift */,
+				8CDD0D5527FE8AA600BDB4EC /* FeedViewController.swift */,
+				8CDD0D2527FE7D5600BDB4EC /* Main.storyboard */,
+				8CDD0D2827FE7D5900BDB4EC /* Assets.xcassets */,
+				8CDD0D2A27FE7D5900BDB4EC /* LaunchScreen.storyboard */,
+				8CDD0D2D27FE7D5900BDB4EC /* Info.plist */,
+			);
+			path = CrimeMap;
+			sourceTree = "<group>";
+		};
+		8CDD0D3527FE7D5A00BDB4EC /* CrimeMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD0D3627FE7D5A00BDB4EC /* CrimeMapTests.swift */,
+			);
+			path = CrimeMapTests;
+			sourceTree = "<group>";
+		};
+		8CDD0D3F27FE7D5A00BDB4EC /* CrimeMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8CDD0D4027FE7D5A00BDB4EC /* CrimeMapUITests.swift */,
+				8CDD0D4227FE7D5A00BDB4EC /* CrimeMapUITestsLaunchTests.swift */,
+			);
+			path = CrimeMapUITests;
+			sourceTree = "<group>";
+		};
+		CF23FF23B65D4E67112414F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5315D2DCFA4CC8285E8C6EF3 /* Pods-CrimeMap.debug.xcconfig */,
+				C4C9C523E227631A5EC3269D /* Pods-CrimeMap.release.xcconfig */,
+				7C359FC4E785248DC6632DCC /* Pods-CrimeMap-CrimeMapUITests.debug.xcconfig */,
+				9BE2BAF8DFF0A57B394E0748 /* Pods-CrimeMap-CrimeMapUITests.release.xcconfig */,
+				152225FCCBE7524292417550 /* Pods-CrimeMapTests.debug.xcconfig */,
+				05ADC8DC01901A6493C4BC0A /* Pods-CrimeMapTests.release.xcconfig */,
+				16212FF1A90E9D1607730BE4 /* Pods-CrimeMap-CrimeMapTests.debug.xcconfig */,
+				A519664AC48D75DFC241FC59 /* Pods-CrimeMap-CrimeMapTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8CDD0D1B27FE7D5600BDB4EC /* CrimeMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CDD0D4627FE7D5A00BDB4EC /* Build configuration list for PBXNativeTarget "CrimeMap" */;
+			buildPhases = (
+				846F789F519AE3B687F69021 /* [CP] Check Pods Manifest.lock */,
+				8CDD0D1827FE7D5600BDB4EC /* Sources */,
+				8CDD0D1927FE7D5600BDB4EC /* Frameworks */,
+				8CDD0D1A27FE7D5600BDB4EC /* Resources */,
+				11EBF5DCA2055B7A1B09C044 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrimeMap;
+			productName = CrimeMap;
+			productReference = 8CDD0D1C27FE7D5600BDB4EC /* CrimeMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8CDD0D3127FE7D5A00BDB4EC /* CrimeMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CDD0D4927FE7D5A00BDB4EC /* Build configuration list for PBXNativeTarget "CrimeMapTests" */;
+			buildPhases = (
+				1C388455828935ABC75F48A4 /* [CP] Check Pods Manifest.lock */,
+				8CDD0D2E27FE7D5A00BDB4EC /* Sources */,
+				8CDD0D2F27FE7D5A00BDB4EC /* Frameworks */,
+				8CDD0D3027FE7D5A00BDB4EC /* Resources */,
+				7DD6FCE970717437F669F897 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CDD0D3427FE7D5A00BDB4EC /* PBXTargetDependency */,
+			);
+			name = CrimeMapTests;
+			productName = CrimeMapTests;
+			productReference = 8CDD0D3227FE7D5A00BDB4EC /* CrimeMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8CDD0D3B27FE7D5A00BDB4EC /* CrimeMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8CDD0D4C27FE7D5A00BDB4EC /* Build configuration list for PBXNativeTarget "CrimeMapUITests" */;
+			buildPhases = (
+				CBBF7CCA0FA7784C60943A28 /* [CP] Check Pods Manifest.lock */,
+				8CDD0D3827FE7D5A00BDB4EC /* Sources */,
+				8CDD0D3927FE7D5A00BDB4EC /* Frameworks */,
+				8CDD0D3A27FE7D5A00BDB4EC /* Resources */,
+				7DEDE78771F7BAE9F0D3B4C9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8CDD0D3E27FE7D5A00BDB4EC /* PBXTargetDependency */,
+			);
+			name = CrimeMapUITests;
+			productName = CrimeMapUITests;
+			productReference = 8CDD0D3C27FE7D5A00BDB4EC /* CrimeMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8CDD0D1427FE7D5600BDB4EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					8CDD0D1B27FE7D5600BDB4EC = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					8CDD0D3127FE7D5A00BDB4EC = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 8CDD0D1B27FE7D5600BDB4EC;
+					};
+					8CDD0D3B27FE7D5A00BDB4EC = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 8CDD0D1B27FE7D5600BDB4EC;
+					};
+				};
+			};
+			buildConfigurationList = 8CDD0D1727FE7D5600BDB4EC /* Build configuration list for PBXProject "CrimeMap" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8CDD0D1327FE7D5600BDB4EC;
+			productRefGroup = 8CDD0D1D27FE7D5600BDB4EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CDD0D1B27FE7D5600BDB4EC /* CrimeMap */,
+				8CDD0D3127FE7D5A00BDB4EC /* CrimeMapTests */,
+				8CDD0D3B27FE7D5A00BDB4EC /* CrimeMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8CDD0D1A27FE7D5600BDB4EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CDD0D2C27FE7D5900BDB4EC /* LaunchScreen.storyboard in Resources */,
+				8CDD0D2927FE7D5900BDB4EC /* Assets.xcassets in Resources */,
+				8CDD0D2727FE7D5600BDB4EC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CDD0D3027FE7D5A00BDB4EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CDD0D3A27FE7D5A00BDB4EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11EBF5DCA2055B7A1B09C044 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrimeMap/Pods-CrimeMap-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrimeMap/Pods-CrimeMap-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrimeMap/Pods-CrimeMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1C388455828935ABC75F48A4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrimeMap-CrimeMapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DD6FCE970717437F669F897 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrimeMap-CrimeMapTests/Pods-CrimeMap-CrimeMapTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrimeMap-CrimeMapTests/Pods-CrimeMap-CrimeMapTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrimeMap-CrimeMapTests/Pods-CrimeMap-CrimeMapTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DEDE78771F7BAE9F0D3B4C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrimeMap-CrimeMapUITests/Pods-CrimeMap-CrimeMapUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CrimeMap-CrimeMapUITests/Pods-CrimeMap-CrimeMapUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CrimeMap-CrimeMapUITests/Pods-CrimeMap-CrimeMapUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		846F789F519AE3B687F69021 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrimeMap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBBF7CCA0FA7784C60943A28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CrimeMap-CrimeMapUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CDD0D1827FE7D5600BDB4EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CDD0D5227FE866200BDB4EC /* LoginViewController.swift in Sources */,
+				8CDD0D2027FE7D5600BDB4EC /* AppDelegate.swift in Sources */,
+				8CDD0D5627FE8AA600BDB4EC /* FeedViewController.swift in Sources */,
+				8CDD0D2227FE7D5600BDB4EC /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CDD0D2E27FE7D5A00BDB4EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CDD0D3727FE7D5A00BDB4EC /* CrimeMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CDD0D3827FE7D5A00BDB4EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CDD0D4327FE7D5A00BDB4EC /* CrimeMapUITestsLaunchTests.swift in Sources */,
+				8CDD0D4127FE7D5A00BDB4EC /* CrimeMapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8CDD0D3427FE7D5A00BDB4EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CDD0D1B27FE7D5600BDB4EC /* CrimeMap */;
+			targetProxy = 8CDD0D3327FE7D5A00BDB4EC /* PBXContainerItemProxy */;
+		};
+		8CDD0D3E27FE7D5A00BDB4EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8CDD0D1B27FE7D5600BDB4EC /* CrimeMap */;
+			targetProxy = 8CDD0D3D27FE7D5A00BDB4EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8CDD0D2527FE7D5600BDB4EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CDD0D2627FE7D5600BDB4EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8CDD0D2A27FE7D5900BDB4EC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8CDD0D2B27FE7D5900BDB4EC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8CDD0D4427FE7D5A00BDB4EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8CDD0D4527FE7D5A00BDB4EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CDD0D4727FE7D5A00BDB4EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5315D2DCFA4CC8285E8C6EF3 /* Pods-CrimeMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NP386MC47;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CrimeMap/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elysiahung.CrimeMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8CDD0D4827FE7D5A00BDB4EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4C9C523E227631A5EC3269D /* Pods-CrimeMap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NP386MC47;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CrimeMap/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elysiahung.CrimeMap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8CDD0D4A27FE7D5A00BDB4EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16212FF1A90E9D1607730BE4 /* Pods-CrimeMap-CrimeMapTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NP386MC47;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elysiahung.CrimeMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrimeMap.app/CrimeMap";
+			};
+			name = Debug;
+		};
+		8CDD0D4B27FE7D5A00BDB4EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A519664AC48D75DFC241FC59 /* Pods-CrimeMap-CrimeMapTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NP386MC47;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elysiahung.CrimeMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CrimeMap.app/CrimeMap";
+			};
+			name = Release;
+		};
+		8CDD0D4D27FE7D5A00BDB4EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C359FC4E785248DC6632DCC /* Pods-CrimeMap-CrimeMapUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NP386MC47;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elysiahung.CrimeMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CrimeMap;
+			};
+			name = Debug;
+		};
+		8CDD0D4E27FE7D5A00BDB4EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BE2BAF8DFF0A57B394E0748 /* Pods-CrimeMap-CrimeMapUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4NP386MC47;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elysiahung.CrimeMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CrimeMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8CDD0D1727FE7D5600BDB4EC /* Build configuration list for PBXProject "CrimeMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CDD0D4427FE7D5A00BDB4EC /* Debug */,
+				8CDD0D4527FE7D5A00BDB4EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CDD0D4627FE7D5A00BDB4EC /* Build configuration list for PBXNativeTarget "CrimeMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CDD0D4727FE7D5A00BDB4EC /* Debug */,
+				8CDD0D4827FE7D5A00BDB4EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CDD0D4927FE7D5A00BDB4EC /* Build configuration list for PBXNativeTarget "CrimeMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CDD0D4A27FE7D5A00BDB4EC /* Debug */,
+				8CDD0D4B27FE7D5A00BDB4EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8CDD0D4C27FE7D5A00BDB4EC /* Build configuration list for PBXNativeTarget "CrimeMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8CDD0D4D27FE7D5A00BDB4EC /* Debug */,
+				8CDD0D4E27FE7D5A00BDB4EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8CDD0D1427FE7D5600BDB4EC /* Project object */;
+}
