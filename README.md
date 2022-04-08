@@ -13,6 +13,13 @@ Original App Design Project
 ### Description
 This app allows users to interact and digest real - time crime data and police responses in their area. The interactive map allows users to view the location of the calls, allowing users to avoid areas of potential conflict, and monitor situations in real time. 
 
+
+## Video Walkthrough
+
+
+
+<img src='https://user-images.githubusercontent.com/76499116/162523605-6c0e7dfb-aa0d-440e-b81a-fbb5f7c07bd9.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 ### App Evaluation
 [Evaluation of your app across the following attributes]
 - **Category:** Travel/Safety
