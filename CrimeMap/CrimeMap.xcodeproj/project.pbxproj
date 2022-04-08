@@ -16,7 +16,7 @@
 		8CDD0D4127FE7D5A00BDB4EC /* CrimeMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D4027FE7D5A00BDB4EC /* CrimeMapUITests.swift */; };
 		8CDD0D4327FE7D5A00BDB4EC /* CrimeMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D4227FE7D5A00BDB4EC /* CrimeMapUITestsLaunchTests.swift */; };
 		8CDD0D5227FE866200BDB4EC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D5127FE866200BDB4EC /* LoginViewController.swift */; };
-		8CDD0D5627FE8AA600BDB4EC /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D5527FE8AA600BDB4EC /* FeedViewController.swift */; };
+		8CDD0D5627FE8AA600BDB4EC /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D5527FE8AA600BDB4EC /* MapViewController.swift */; };
 		8E44A91A8362BA6388445D2A /* Pods_CrimeMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42185C0B117BB81DC3A2470 /* Pods_CrimeMap.framework */; };
 		AED7177D0DA3DCCD96D78C78 /* Pods_CrimeMap_CrimeMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F5DB30E3D8A490555CB0FA /* Pods_CrimeMap_CrimeMapTests.framework */; };
 		B8FB121712F6D3CDFE414B32 /* Pods_CrimeMap_CrimeMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F838923BF14F621F7DB3C15 /* Pods_CrimeMap_CrimeMapUITests.framework */; };
@@ -59,7 +59,7 @@
 		8CDD0D4027FE7D5A00BDB4EC /* CrimeMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeMapUITests.swift; sourceTree = "<group>"; };
 		8CDD0D4227FE7D5A00BDB4EC /* CrimeMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrimeMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8CDD0D5127FE866200BDB4EC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		8CDD0D5527FE8AA600BDB4EC /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		8CDD0D5527FE8AA600BDB4EC /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		97F5DB30E3D8A490555CB0FA /* Pods_CrimeMap_CrimeMapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrimeMap_CrimeMapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE2BAF8DFF0A57B394E0748 /* Pods-CrimeMap-CrimeMapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap-CrimeMapUITests.release.xcconfig"; path = "Target Support Files/Pods-CrimeMap-CrimeMapUITests/Pods-CrimeMap-CrimeMapUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A519664AC48D75DFC241FC59 /* Pods-CrimeMap-CrimeMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap-CrimeMapTests.release.xcconfig"; path = "Target Support Files/Pods-CrimeMap-CrimeMapTests/Pods-CrimeMap-CrimeMapTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,7 +133,7 @@
 				8CDD0D1F27FE7D5600BDB4EC /* AppDelegate.swift */,
 				8CDD0D2127FE7D5600BDB4EC /* SceneDelegate.swift */,
 				8CDD0D5127FE866200BDB4EC /* LoginViewController.swift */,
-				8CDD0D5527FE8AA600BDB4EC /* FeedViewController.swift */,
+				8CDD0D5527FE8AA600BDB4EC /* MapViewController.swift */,
 				8CDD0D2527FE7D5600BDB4EC /* Main.storyboard */,
 				8CDD0D2827FE7D5900BDB4EC /* Assets.xcassets */,
 				8CDD0D2A27FE7D5900BDB4EC /* LaunchScreen.storyboard */,
@@ -433,7 +433,7 @@
 			files = (
 				8CDD0D5227FE866200BDB4EC /* LoginViewController.swift in Sources */,
 				8CDD0D2027FE7D5600BDB4EC /* AppDelegate.swift in Sources */,
-				8CDD0D5627FE8AA600BDB4EC /* FeedViewController.swift in Sources */,
+				8CDD0D5627FE8AA600BDB4EC /* MapViewController.swift in Sources */,
 				8CDD0D2227FE7D5600BDB4EC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -34,13 +34,13 @@
                                 <rect key="frame" x="45" y="361" width="338" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o2M-v5-I39">
                                 <rect key="frame" x="45" y="474" width="338" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSH-iL-ftg">
                                 <rect key="frame" x="45" y="554" width="101" height="31"/>
@@ -81,15 +81,26 @@
             </objects>
             <point key="canvasLocation" x="18.840579710144929" y="62.946428571428569"/>
         </scene>
-        <!--Feed View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="DCT-If-CFN">
             <objects>
-                <viewController id="iAa-8t-ar3" customClass="FeedViewController" customModule="CrimeMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iAa-8t-ar3" customClass="MapViewController" customModule="CrimeMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8S-I5-9Im">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="jJc-xI-Rfi">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="CUf-8U-ao6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jJc-xI-Rfi" firstAttribute="leading" secondItem="CUf-8U-ao6" secondAttribute="leading" id="7Pv-dd-Kfo"/>
+                            <constraint firstItem="jJc-xI-Rfi" firstAttribute="top" secondItem="CUf-8U-ao6" secondAttribute="top" id="cP0-mf-3rA"/>
+                            <constraint firstItem="CUf-8U-ao6" firstAttribute="bottom" secondItem="jJc-xI-Rfi" secondAttribute="bottom" id="m8M-Vd-s8V"/>
+                            <constraint firstItem="CUf-8U-ao6" firstAttribute="trailing" secondItem="jJc-xI-Rfi" secondAttribute="trailing" id="otv-9Q-7yM"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vRM-d5-FqK"/>
                 </viewController>
@@ -100,10 +111,10 @@
         <!--Navigation Controller-->
         <scene sceneID="fjv-gK-41K">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9pt-3S-1Bv" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="9pt-3S-1Bv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="t4v-Hx-oci">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
