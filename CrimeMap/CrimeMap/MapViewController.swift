@@ -39,7 +39,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     func renderLocation( location: CLLocation) {
+        
+        //The following makes it so that the map zooms in on the users location by default
         let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
+        //Changing the delta values below adjusts the level of zoom - smaller means more zoomed in
         let span = MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)
         let region = MKCoordinateRegion(center: coordinate, span: span)
         mapView.setRegion(region, animated: true)
