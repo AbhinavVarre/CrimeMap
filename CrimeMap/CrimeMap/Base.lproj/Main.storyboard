@@ -104,6 +104,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="vRM-d5-FqK">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="ZJy-TN-d92"/>
+                        <barButtonItem key="rightBarButtonItem" title="Post" id="riY-JG-4Tw"/>
                     </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="jJc-xI-Rfi" id="dtc-o3-d2L"/>
@@ -130,6 +131,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4k-8L-M4J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="821.73913043478262" y="62.946428571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="7lu-cN-UdN">
+            <objects>
+                <viewController id="wdf-L5-id7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qbb-dp-B3Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="OjB-5N-8PF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bOR-VB-c3F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2580" y="63"/>
         </scene>
     </scenes>
     <resources>
