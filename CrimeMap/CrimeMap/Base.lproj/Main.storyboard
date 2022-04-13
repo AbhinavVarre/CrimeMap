@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -102,7 +102,9 @@
                             <constraint firstItem="CUf-8U-ao6" firstAttribute="trailing" secondItem="jJc-xI-Rfi" secondAttribute="trailing" id="otv-9Q-7yM"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="vRM-d5-FqK"/>
+                    <navigationItem key="navigationItem" id="vRM-d5-FqK">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="ZJy-TN-d92"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="mapView" destination="jJc-xI-Rfi" id="dtc-o3-d2L"/>
                     </connections>
@@ -114,7 +116,7 @@
         <!--Navigation Controller-->
         <scene sceneID="fjv-gK-41K">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="9pt-3S-1Bv" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="9pt-3S-1Bv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="t4v-Hx-oci">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

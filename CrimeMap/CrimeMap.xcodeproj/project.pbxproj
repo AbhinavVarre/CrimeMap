@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8CC72C012806634000BB9A29 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC72C002806634000BB9A29 /* FeedViewController.swift */; };
 		8CDD0D2027FE7D5600BDB4EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D1F27FE7D5600BDB4EC /* AppDelegate.swift */; };
 		8CDD0D2227FE7D5600BDB4EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D2127FE7D5600BDB4EC /* SceneDelegate.swift */; };
 		8CDD0D2727FE7D5600BDB4EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDD0D2527FE7D5600BDB4EC /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		5315D2DCFA4CC8285E8C6EF3 /* Pods-CrimeMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMap/Pods-CrimeMap.debug.xcconfig"; sourceTree = "<group>"; };
 		5F838923BF14F621F7DB3C15 /* Pods_CrimeMap_CrimeMapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrimeMap_CrimeMapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C359FC4E785248DC6632DCC /* Pods-CrimeMap-CrimeMapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap-CrimeMapUITests.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMap-CrimeMapUITests/Pods-CrimeMap-CrimeMapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8CC72C002806634000BB9A29 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		8CDD0D1C27FE7D5600BDB4EC /* CrimeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrimeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDD0D1F27FE7D5600BDB4EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CDD0D2127FE7D5600BDB4EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				8CDD0D1F27FE7D5600BDB4EC /* AppDelegate.swift */,
 				8CDD0D2127FE7D5600BDB4EC /* SceneDelegate.swift */,
+				8CC72C002806634000BB9A29 /* FeedViewController.swift */,
 				8CDD0D5127FE866200BDB4EC /* LoginViewController.swift */,
 				8CDD0D5527FE8AA600BDB4EC /* MapViewController.swift */,
 				8CDD0D2527FE7D5600BDB4EC /* Main.storyboard */,
@@ -433,6 +436,7 @@
 			files = (
 				8CDD0D5227FE866200BDB4EC /* LoginViewController.swift in Sources */,
 				8CDD0D2027FE7D5600BDB4EC /* AppDelegate.swift in Sources */,
+				8CC72C012806634000BB9A29 /* FeedViewController.swift in Sources */,
 				8CDD0D5627FE8AA600BDB4EC /* MapViewController.swift in Sources */,
 				8CDD0D2227FE7D5600BDB4EC /* SceneDelegate.swift in Sources */,
 			);
