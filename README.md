@@ -9,6 +9,7 @@ Original App Design Project
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
 
+
 ## Overview
 ### Description
 This app allows users to interact and digest real - time crime data and police responses in their area. The interactive map allows users to view the location of the calls, allowing users to avoid areas of potential conflict, and monitor situations in real time. 
@@ -16,7 +17,7 @@ This app allows users to interact and digest real - time crime data and police r
 
 ## Video Walkthrough
 
-
+<img src='https://user-images.githubusercontent.com/76499116/163656747-7f470ad9-ab6a-412f-ab45-17ac6c8d096b.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <img src='https://user-images.githubusercontent.com/76499116/162523605-6c0e7dfb-aa0d-440e-b81a-fbb5f7c07bd9.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
