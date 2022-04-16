@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--LoginViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="CrimeMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="LoginViewController" storyboardIdentifier="LoginViewController" title="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="CrimeMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vRM-d5-FqK">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="ZJy-TN-d92"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="ZJy-TN-d92">
+                            <connections>
+                                <action selector="logUserOut:" destination="iAa-8t-ar3" id="zNA-cq-MYB"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Post" id="riY-JG-4Tw">
                             <connections>
                                 <segue destination="wdf-L5-id7" kind="presentation" id="7y5-aA-UKM"/>
@@ -116,7 +120,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjf-LY-Cnk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2655.072463768116" y="-174.10714285714286"/>
+            <point key="canvasLocation" x="2636" y="161"/>
         </scene>
         <!--Map-->
         <scene sceneID="fjv-gK-41K">
@@ -135,12 +139,11 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4k-8L-M4J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1731.8840579710147" y="62.946428571428569"/>
+            <point key="canvasLocation" x="1745" y="161"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="cIu-Gf-KuP">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rZr-vX-ra3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="rIb-ba-Z61" customClass="TableViewController" customModule="CrimeMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hwU-Cq-DRz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -165,6 +168,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZr-vX-ra3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2757.971014492754" y="-891.29464285714278"/>
         </scene>
@@ -250,11 +254,11 @@
         <!--Item-->
         <scene sceneID="JiV-Bo-CRr">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="n7v-P9-547" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="fqy-yM-AZU" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="55c-rI-YDa"/>
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0J0-OM-PJ6">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -263,12 +267,13 @@
                         <segue destination="KK8-9o-KXQ" kind="relationship" relationship="viewControllers" destinationCreationSelector="Table" id="s8h-Q5-TZ8"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n7v-P9-547" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="774" y="-184"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="wj9-hr-lLM"/>
+        <segue reference="7y5-aA-UKM"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
