@@ -73,7 +73,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
                 print("User tapped on annotation with title: \(annotationTitle!)")
                 let main = UIStoryboard(name: "Main", bundle: nil)
                 let annotationView = main.instantiateViewController(withIdentifier: "AnnotationInfoViewController") as! AnnotationInfoViewController
-                let tempDesc = "some sort of crime just happened... This description will inform you more about it." as String
+                let tempDesc = "Some sort of crime just happened... This description will inform you more about it." as String
                 self.present(annotationView, animated: true)
                 
                 
