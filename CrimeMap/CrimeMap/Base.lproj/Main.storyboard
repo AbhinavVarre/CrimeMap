@@ -79,12 +79,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-346" y="-184"/>
+            <point key="canvasLocation" x="-358" y="-249"/>
         </scene>
-        <!--Map View Controller-->
+        <!--MapViewController-->
         <scene sceneID="DCT-If-CFN">
             <objects>
-                <viewController id="iAa-8t-ar3" customClass="MapViewController" customModule="CrimeMap" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" title="MapViewController" id="iAa-8t-ar3" customClass="MapViewController" customModule="CrimeMap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K8S-I5-9Im">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,6 +102,7 @@
                             <constraint firstItem="CUf-8U-ao6" firstAttribute="trailing" secondItem="jJc-xI-Rfi" secondAttribute="trailing" id="otv-9Q-7yM"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="7FJ-UI-Xdr"/>
                     <navigationItem key="navigationItem" id="vRM-d5-FqK">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="ZJy-TN-d92">
                             <connections>
@@ -120,12 +121,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjf-LY-Cnk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2636" y="161"/>
+            <point key="canvasLocation" x="2758" y="161"/>
+        </scene>
+        <!--AnnotationInfoViewController-->
+        <scene sceneID="WsB-SH-82r">
+            <objects>
+                <viewController storyboardIdentifier="AnnotationInfoViewController" title="AnnotationInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="JVh-PU-z5m" customClass="AnnotationInfoViewController" customModule="CrimeMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rsK-RD-Gaa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ppm-0x-1fj">
+                                <rect key="frame" x="149" y="151" width="117" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9o-Az-TUT">
+                                <rect key="frame" x="79" y="239" width="256" height="148"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="v9Q-Qk-iGL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="crimeDescription" destination="a9o-Az-TUT" id="mmv-qH-bgH"/>
+                        <outlet property="crimeEventLabel" destination="ppm-0x-1fj" id="omR-uP-XSv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Dr-Ft-HHG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3657.971014492754" y="240.40178571428569"/>
         </scene>
         <!--Map-->
         <scene sceneID="fjv-gK-41K">
             <objects>
-                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="9pt-3S-1Bv" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="MapNavigationController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="9pt-3S-1Bv" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Map" id="rMZ-Uy-2Xn"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="t4v-Hx-oci">
@@ -249,13 +285,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2O-eV-CtG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1847.826086956522" y="-891.29464285714278"/>
+            <point key="canvasLocation" x="1745" y="-891"/>
         </scene>
-        <!--Item-->
+        <!--TabBarController-->
         <scene sceneID="JiV-Bo-CRr">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="fqy-yM-AZU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="55c-rI-YDa"/>
+                <tabBarController storyboardIdentifier="TabBarController" title="TabBarController" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="fqy-yM-AZU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0J0-OM-PJ6">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -263,13 +298,13 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="9pt-3S-1Bv" kind="relationship" relationship="viewControllers" id="gVa-vc-Ls9"/>
+                        <segue destination="9pt-3S-1Bv" kind="relationship" relationship="viewControllers" id="VaK-T8-hF0"/>
                         <segue destination="KK8-9o-KXQ" kind="relationship" relationship="viewControllers" destinationCreationSelector="Table" id="s8h-Q5-TZ8"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n7v-P9-547" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="774" y="-184"/>
+            <point key="canvasLocation" x="590" y="-249"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

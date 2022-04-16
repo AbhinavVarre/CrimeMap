@@ -1,18 +1,32 @@
 //
-//  FeedViewController.swift
+//  AnnotationInfoViewController.swift
 //  CrimeMap
 //
-//  Created by Elysia Hung on 4/12/22.
+//  Created by Abhinav Varre on 4/16/22.
 //
 
 import UIKit
 
-class FeedViewController: UIViewController {
+class AnnotationInfoViewController: UIViewController {
+    
+    @IBOutlet weak var crimeEventLabel: UILabel!
 
+    @IBOutlet weak var crimeDescription: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        crimeEventLabel.text = ""
+        crimeDescription.text = ""
 
         // Do any additional setup after loading the view.
+    }
+    
+    func setLabelAndDesc(label: String, desc: String)
+    {
+        
+        crimeEventLabel.text = label
+        crimeDescription.text = desc
+        
     }
     
 

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8CC72C012806634000BB9A29 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CC72C002806634000BB9A29 /* FeedViewController.swift */; };
+		38A214D3280ACE0F00BADF56 /* AnnotationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A214D2280ACE0F00BADF56 /* AnnotationInfoViewController.swift */; };
 		8CDD0D2027FE7D5600BDB4EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D1F27FE7D5600BDB4EC /* AppDelegate.swift */; };
 		8CDD0D2227FE7D5600BDB4EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D2127FE7D5600BDB4EC /* SceneDelegate.swift */; };
 		8CDD0D2727FE7D5600BDB4EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDD0D2527FE7D5600BDB4EC /* Main.storyboard */; };
@@ -46,10 +46,10 @@
 		05ADC8DC01901A6493C4BC0A /* Pods-CrimeMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMapTests.release.xcconfig"; path = "Target Support Files/Pods-CrimeMapTests/Pods-CrimeMapTests.release.xcconfig"; sourceTree = "<group>"; };
 		152225FCCBE7524292417550 /* Pods-CrimeMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMapTests.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMapTests/Pods-CrimeMapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		16212FF1A90E9D1607730BE4 /* Pods-CrimeMap-CrimeMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap-CrimeMapTests.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMap-CrimeMapTests/Pods-CrimeMap-CrimeMapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		38A214D2280ACE0F00BADF56 /* AnnotationInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationInfoViewController.swift; sourceTree = "<group>"; };
 		5315D2DCFA4CC8285E8C6EF3 /* Pods-CrimeMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMap/Pods-CrimeMap.debug.xcconfig"; sourceTree = "<group>"; };
 		5F838923BF14F621F7DB3C15 /* Pods_CrimeMap_CrimeMapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrimeMap_CrimeMapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C359FC4E785248DC6632DCC /* Pods-CrimeMap-CrimeMapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap-CrimeMapUITests.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMap-CrimeMapUITests/Pods-CrimeMap-CrimeMapUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		8CC72C002806634000BB9A29 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		8CDD0D1C27FE7D5600BDB4EC /* CrimeMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrimeMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CDD0D1F27FE7D5600BDB4EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8CDD0D2127FE7D5600BDB4EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,12 +138,12 @@
 			children = (
 				8CDD0D1F27FE7D5600BDB4EC /* AppDelegate.swift */,
 				8CDD0D2127FE7D5600BDB4EC /* SceneDelegate.swift */,
-				8CC72C002806634000BB9A29 /* FeedViewController.swift */,
 				8CDD0D5127FE866200BDB4EC /* LoginViewController.swift */,
 				8CDD0D5527FE8AA600BDB4EC /* MapViewController.swift */,
 				8CDD0D2527FE7D5600BDB4EC /* Main.storyboard */,
 				B83620AE280787460086F964 /* TableViewController.swift */,
 				B83620AC280782780086F964 /* PostViewController.swift */,
+				38A214D2280ACE0F00BADF56 /* AnnotationInfoViewController.swift */,
 				8CDD0D2827FE7D5900BDB4EC /* Assets.xcassets */,
 				8CDD0D2A27FE7D5900BDB4EC /* LaunchScreen.storyboard */,
 				8CDD0D2D27FE7D5900BDB4EC /* Info.plist */,
@@ -444,7 +444,7 @@
 				B83620AF280787460086F964 /* TableViewController.swift in Sources */,
 				8CDD0D5227FE866200BDB4EC /* LoginViewController.swift in Sources */,
 				8CDD0D2027FE7D5600BDB4EC /* AppDelegate.swift in Sources */,
-				8CC72C012806634000BB9A29 /* FeedViewController.swift in Sources */,
+				38A214D3280ACE0F00BADF56 /* AnnotationInfoViewController.swift in Sources */,
 				8CDD0D5627FE8AA600BDB4EC /* MapViewController.swift in Sources */,
 				8CDD0D2227FE7D5600BDB4EC /* SceneDelegate.swift in Sources */,
 			);

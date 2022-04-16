@@ -10,7 +10,7 @@ import MapKit
 import CoreLocation
 import Parse
 
-class MapViewController: UIViewController, CLLocationManagerDelegate {
+class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     
 
@@ -20,9 +20,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-
-        // Do any additional setup after loading the view.
+        mapView.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -65,8 +63,25 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let
         delegate = windowScene.delegate as? SceneDelegate else {return}
         delegate.window?.rootViewController = loginViewController
+        self.present(loginViewController, animated: true)
     }
     
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView)
+        {
+            if let annotationTitle = view.annotation?.title
+            {
+                print("User tapped on annotation with title: \(annotationTitle!)")
+                let main = UIStoryboard(name: "Main", bundle: nil)
+                let annotationView = main.instantiateViewController(withIdentifier: "AnnotationInfoViewController") as! AnnotationInfoViewController
+                let tempDesc = "some sort of crime just happened... This description will inform you more about it." as String
+                self.present(annotationView, animated: true)
+                
+                
+                annotationView.setLabelAndDesc(label: annotationTitle!, desc: tempDesc)
+
+                
+            }
+        }
     /*
     // MARK: - Navigation
 
