@@ -17,6 +17,8 @@ This app allows users to interact and digest real - time crime data and police r
 
 ## Video Walkthrough
 
+<img src='https://user-images.githubusercontent.com/76499116/164873034-a904e81b-9962-4308-96a9-23235b570c6d.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 <img src='https://user-images.githubusercontent.com/76499116/163656747-7f470ad9-ab6a-412f-ab45-17ac6c8d096b.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <img src='https://user-images.githubusercontent.com/76499116/162523605-6c0e7dfb-aa0d-440e-b81a-fbb5f7c07bd9.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
@@ -38,6 +40,8 @@ This app allows users to interact and digest real - time crime data and police r
 
 **Required Must-have Stories**
 
+- [X] The app is connect with a database recording data.
+- [x] User is able to check the incidents through table view
 - [x] An interactive map that users can drag, zoom in on, etc.
 - [x] User is able to sign up, sign in and sign out.
 - [x] User is able to post incidents.
