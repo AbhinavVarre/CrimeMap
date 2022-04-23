@@ -8,6 +8,7 @@
 import UIKit
 import Parse
 import Alamofire
+import MapKit
 
 class TableViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
@@ -54,8 +55,61 @@ class TableViewController: UIViewController, UITableViewDelegate,UITableViewData
         cell.LongtitudeLabel.text = post["Longtitude"] as? String
         cell.LatitudeLabel.text = post["Latitude"] as? String
         cell.LocationLabel.text = "Location:"
+        let location = CLLocationCoordinate2D(latitude: Double(post["Latitude"] as! String)! , longitude: Double(post["Longtitude"] as! String)!)
+        findAddressFromCoords(location: location, cell: cell)
+        
+        
+        
+    
         
         return cell
+    }
+    
+    
+    func findAddressFromCoords(location:CLLocationCoordinate2D, cell: TableViewCell)  {
+        let geoCoder = CLGeocoder()
+        let clloc = CLLocation(latitude: CLLocationDegrees(location.latitude),longitude:  CLLocationDegrees(location.longitude))
+        print(clloc.coordinate.longitude)
+        print(clloc.coordinate.latitude)
+        geoCoder.reverseGeocodeLocation(clloc) { [weak self] (placemarks, error) in
+                   guard let self = self else { return }
+                   if let _ = error {
+                       //TODO: Show alert informing the user
+                       return
+                   }
+                   
+                   guard let placemark = placemarks?.first else {
+                       //TODO: Show alert informing the user
+                       return
+                   }
+            print("\n")
+            print("lat: \(clloc.coordinate.latitude)  \(placemark.thoroughfare ?? "N/A")")
+            print("long: \(clloc.coordinate.longitude)")
+       
+                    let streetNum = placemark.subThoroughfare ?? ""
+                    let streetAdd = placemark.thoroughfare ?? ""
+                    let streetState = placemark.locality ?? ""
+                    let streetCountry = placemark.country ?? ""
+            let locality = placemark.ocean ?? ""
+            
+            
+            if(streetNum + streetAdd + streetCountry + streetState + locality == "")
+            {
+                cell.AddressLabel.text = "N/A"
+            }
+            else{
+                var completeStr = streetNum+" "+streetAdd+" "
+                completeStr += streetState + " "
+                completeStr += locality + " "
+                completeStr += streetCountry
+        
+                cell.AddressLabel.text = completeStr
+            }
+                    //return streetNumber + streetName
+
+               }
+        
+        
     }
 
     /*

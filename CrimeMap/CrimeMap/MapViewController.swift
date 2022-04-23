@@ -86,9 +86,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         print("counts: \(self.posts.count)")
 
         var annotationArr = [CustomAnnotation]()
-        let annotationToBeAdded:CustomAnnotation = CustomAnnotation()
+        
         print("the count of posts: \(self.posts.count)")
         for post in self.posts{
+            let annotationToBeAdded:CustomAnnotation = CustomAnnotation()
             print("running")
             annotationToBeAdded.coordinate = CLLocationCoordinate2D(latitude: Double(post["Latitude"] as! String)! , longitude: Double(post["Longtitude"] as! String)!)
             print("Lat \(Double(post["Latitude"] as! String)!)")

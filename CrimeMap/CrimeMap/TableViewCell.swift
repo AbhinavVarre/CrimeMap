@@ -14,6 +14,7 @@ class TableViewCell: UITableViewCell {
     @IBOutlet weak var LatitudeLabel: UILabel!
     @IBOutlet weak var LongtitudeLabel: UILabel!
     @IBOutlet weak var LocationLabel: UILabel!
+    @IBOutlet weak var AddressLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
