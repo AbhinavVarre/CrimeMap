@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		38A214D3280ACE0F00BADF56 /* AnnotationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A214D2280ACE0F00BADF56 /* AnnotationInfoViewController.swift */; };
+		38A6A9DF280E06C9005ED18A /* Crime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A6A9DE280E06C9005ED18A /* Crime.swift */; };
 		8CDD0D2027FE7D5600BDB4EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D1F27FE7D5600BDB4EC /* AppDelegate.swift */; };
 		8CDD0D2227FE7D5600BDB4EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CDD0D2127FE7D5600BDB4EC /* SceneDelegate.swift */; };
 		8CDD0D2727FE7D5600BDB4EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CDD0D2527FE7D5600BDB4EC /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		152225FCCBE7524292417550 /* Pods-CrimeMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMapTests.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMapTests/Pods-CrimeMapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		16212FF1A90E9D1607730BE4 /* Pods-CrimeMap-CrimeMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap-CrimeMapTests.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMap-CrimeMapTests/Pods-CrimeMap-CrimeMapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		38A214D2280ACE0F00BADF56 /* AnnotationInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationInfoViewController.swift; sourceTree = "<group>"; };
+		38A6A9DE280E06C9005ED18A /* Crime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crime.swift; sourceTree = "<group>"; };
 		5315D2DCFA4CC8285E8C6EF3 /* Pods-CrimeMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMap/Pods-CrimeMap.debug.xcconfig"; sourceTree = "<group>"; };
 		5F838923BF14F621F7DB3C15 /* Pods_CrimeMap_CrimeMapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrimeMap_CrimeMapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C359FC4E785248DC6632DCC /* Pods-CrimeMap-CrimeMapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap-CrimeMapUITests.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMap-CrimeMapUITests/Pods-CrimeMap-CrimeMapUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				8CDD0D2827FE7D5900BDB4EC /* Assets.xcassets */,
 				8CDD0D2A27FE7D5900BDB4EC /* LaunchScreen.storyboard */,
 				8CDD0D2D27FE7D5900BDB4EC /* Info.plist */,
+				38A6A9DE280E06C9005ED18A /* Crime.swift */,
 			);
 			path = CrimeMap;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				8CDD0D2027FE7D5600BDB4EC /* AppDelegate.swift in Sources */,
 				38A214D3280ACE0F00BADF56 /* AnnotationInfoViewController.swift in Sources */,
 				8CDD0D5627FE8AA600BDB4EC /* MapViewController.swift in Sources */,
+				38A6A9DF280E06C9005ED18A /* Crime.swift in Sources */,
 				8CDD0D2227FE7D5600BDB4EC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
