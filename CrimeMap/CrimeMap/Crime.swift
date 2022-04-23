@@ -9,12 +9,17 @@ import Foundation
 import CoreLocation
 
 class Crime {
-    
-    let title: String = ""
-    let description: String = ""
-    let location: CLLocation
-    
 
+    var title: String
+    var description: String
+    var location: CLLocation
+    
+    init(title: String, description: String, location: CLLocation) {
+        self.title = title
+        self.location = location
+        self.description = description
+     }
+    
     
      
 }

@@ -16,19 +16,26 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
 
     @IBOutlet weak var mapView: MKMapView!
     
+    var posts = [PFObject]()
     let location = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mapView.delegate = self
+        
+        
+    
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        mapView.delegate = self
         location.desiredAccuracy = kCLLocationAccuracyBest
         location.delegate = self
         location.requestWhenInUseAuthorization()
         location.startUpdatingLocation()
+        mapView.reloadInputViews()
+        
+       
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -41,6 +48,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     func renderLocation( location: CLLocation) {
         
+  
         //The following makes it so that the map zooms in on the users location by default
         let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         //Changing the delta values below adjusts the level of zoom - smaller means more zoomed in
@@ -49,10 +57,66 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         mapView.setRegion(region, animated: true)
         mapView.showsUserLocation = true;
         //Working on the annotationsa and getting a detail page up and running
-        let sampleAnnotationPin = MKPointAnnotation()
+        generateAnnotationList(location: location)
+        
+    }
+    
+    func generateAnnotationList(location : CLLocation)
+    {
+        let annotations = mapView.annotations.filter({ !($0 is MKUserLocation) })
+        mapView.removeAnnotations(annotations)
+        let query = PFQuery(className:"Incidents")
+        query.includeKeys(["incident","Longtitude","Latitude", "detail"])
+        query.limit = 20
+        do{
+            try posts = query.findObjects()
+        }catch {
+            print("didn't work")
+        }
+//        query.findObjectsInBackground(){
+//            (posts, error) in
+//            if posts != nil{
+//                self.posts = posts!
+//                print("counts: \(self.posts.count)")
+//            }
+//            else{
+//                print("query didn't work: \(error)")
+//            }
+//        }
+        print("counts: \(self.posts.count)")
+
+        var annotationArr = [CustomAnnotation]()
+        let annotationToBeAdded:CustomAnnotation = CustomAnnotation()
+        print("the count of posts: \(self.posts.count)")
+        for post in self.posts{
+            print("running")
+            annotationToBeAdded.coordinate = CLLocationCoordinate2D(latitude: Double(post["Latitude"] as! String)! , longitude: Double(post["Longtitude"] as! String)!)
+            print("Lat \(Double(post["Latitude"] as! String)!)")
+            print("Long \(Double(post["Longtitude"] as! String)!)")
+
+            annotationToBeAdded.title = post["incident"] as! String
+            annotationToBeAdded.crimeDesc = post["detail"] as! String
+            //mapView.addAnnotation(annotationToBeAdded)
+            annotationArr.append(annotationToBeAdded)
+
+            //annotationToBeAdded.id = post["objectId"]  as! String
+            //mapView.addAnnotation(annotationToBeAdded)
+        }
+        
+    
+        
+        let sampleAnnotationPin: CustomAnnotation = CustomAnnotation()
         sampleAnnotationPin.coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude + 0.001, longitude: location.coordinate.longitude + 0.001)
+        print("Lat cur \(location.coordinate.latitude)")
+        print("Long cur \(location.coordinate.longitude)")
         sampleAnnotationPin.title = "Mugging"
-        mapView.addAnnotation(sampleAnnotationPin)
+        sampleAnnotationPin.crimeDesc = "random info"
+        //mapView.addAnnotation(sampleAnnotationPin)
+        annotationArr.append(sampleAnnotationPin)
+        mapView.addAnnotations(annotationArr)
+        print("arr: \(annotationArr.count)")
+        print("num of annots: \(mapView.annotations.count)")
+
         
     }
     
@@ -68,18 +132,15 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView)
         {
-            if let annotationTitle = view.annotation?.title
+            if let crimeAnnotation = view.annotation as? CustomAnnotation
             {
-                print("User tapped on annotation with title: \(annotationTitle!)")
+                let annotationTitle = crimeAnnotation.title
+                print("User tapped on annotation with title: \(annotationTitle)")
                 let main = UIStoryboard(name: "Main", bundle: nil)
                 let annotationView = main.instantiateViewController(withIdentifier: "AnnotationInfoViewController") as! AnnotationInfoViewController
-                let tempDesc = "Some sort of crime just happened... This description will inform you more about it." as String
                 self.present(annotationView, animated: true)
-                
-                
-                annotationView.setLabelAndDesc(label: annotationTitle!, desc: tempDesc)
-
-                
+                annotationView.setLabelAndDesc(label: annotationTitle!, desc: crimeAnnotation.crimeDesc! )
+            
             }
         }
     /*

@@ -15,6 +15,7 @@ class AnnotationInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("this runs")
         crimeEventLabel.text = ""
         crimeDescription.text = ""
 

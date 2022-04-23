@@ -16,6 +16,7 @@ class PostViewController: UIViewController {
     @IBOutlet weak var DetailField: UITextField!
     @IBOutlet weak var LongtitudeField: UITextField!
     
+    
     @IBAction func onSubmitButton(_ sender: Any) {
         let incident = PFObject(className: "Incidents")
         incident["Longtitude"] = LongtitudeField.text;
@@ -31,6 +32,8 @@ class PostViewController: UIViewController {
                 print("error!")
             }
         }
+        
+        self.dismiss(animated: true)
     }
     
     
