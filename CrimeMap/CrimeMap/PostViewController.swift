@@ -9,14 +9,19 @@ import UIKit
 import Parse
 
 class PostViewController: UIViewController {
-    @IBOutlet weak var IncidentField: UITextField!
-    @IBOutlet weak var LocationField: UITextField!
     
+
+    @IBOutlet weak var LocationField: UITextField!
+    @IBOutlet weak var IncidentField: UITextField!
+    @IBOutlet weak var DetailField: UITextField!
+    @IBOutlet weak var LongtitudeField: UITextField!
     
     @IBAction func onSubmitButton(_ sender: Any) {
         let incident = PFObject(className: "Incidents")
-        incident["Location"] = LocationField.text;
+        incident["Longtitude"] = LongtitudeField.text;
+        incident["Latitude"] = LocationField.text;
         incident["incident"] = IncidentField.text
+        incident["detail"] = DetailField.text
         incident["reporter"] = PFUser.current()!
         
         incident.saveInBackground { success, Error in

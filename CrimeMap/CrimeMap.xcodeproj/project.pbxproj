@@ -22,6 +22,7 @@
 		AED7177D0DA3DCCD96D78C78 /* Pods_CrimeMap_CrimeMapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97F5DB30E3D8A490555CB0FA /* Pods_CrimeMap_CrimeMapTests.framework */; };
 		B83620AD280782780086F964 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83620AC280782780086F964 /* PostViewController.swift */; };
 		B83620AF280787460086F964 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83620AE280787460086F964 /* TableViewController.swift */; };
+		B83620B12810531D0086F964 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B83620B02810531D0086F964 /* TableViewCell.swift */; };
 		B8FB121712F6D3CDFE414B32 /* Pods_CrimeMap_CrimeMapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F838923BF14F621F7DB3C15 /* Pods_CrimeMap_CrimeMapUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,7 @@
 		A519664AC48D75DFC241FC59 /* Pods-CrimeMap-CrimeMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap-CrimeMapTests.release.xcconfig"; path = "Target Support Files/Pods-CrimeMap-CrimeMapTests/Pods-CrimeMap-CrimeMapTests.release.xcconfig"; sourceTree = "<group>"; };
 		B83620AC280782780086F964 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		B83620AE280787460086F964 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		B83620B02810531D0086F964 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		C4C9C523E227631A5EC3269D /* Pods-CrimeMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap.release.xcconfig"; path = "Target Support Files/Pods-CrimeMap/Pods-CrimeMap.release.xcconfig"; sourceTree = "<group>"; };
 		F42185C0B117BB81DC3A2470 /* Pods_CrimeMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CrimeMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -141,6 +143,7 @@
 				8CDD0D5127FE866200BDB4EC /* LoginViewController.swift */,
 				8CDD0D5527FE8AA600BDB4EC /* MapViewController.swift */,
 				8CDD0D2527FE7D5600BDB4EC /* Main.storyboard */,
+				B83620B02810531D0086F964 /* TableViewCell.swift */,
 				B83620AE280787460086F964 /* TableViewController.swift */,
 				B83620AC280782780086F964 /* PostViewController.swift */,
 				38A214D2280ACE0F00BADF56 /* AnnotationInfoViewController.swift */,
@@ -441,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B83620AD280782780086F964 /* PostViewController.swift in Sources */,
+				B83620B12810531D0086F964 /* TableViewCell.swift in Sources */,
 				B83620AF280787460086F964 /* TableViewController.swift in Sources */,
 				8CDD0D5227FE866200BDB4EC /* LoginViewController.swift in Sources */,
 				8CDD0D2027FE7D5600BDB4EC /* AppDelegate.swift in Sources */,
@@ -626,10 +630,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C6Z4CQ328B;
+				DEVELOPMENT_TEAM = UL454QPW6B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CrimeMap/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow CrimeMap to access your current location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please let CrimeMap access your location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -640,7 +644,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepathgroup.CrimeMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.albert81915929.CrimeMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -656,10 +660,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = C6Z4CQ328B;
+				DEVELOPMENT_TEAM = UL454QPW6B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CrimeMap/Info.plist;
-				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please allow CrimeMap to access your current location.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Please let CrimeMap access your location.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -670,7 +674,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.codepathgroup.CrimeMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.albert81915929.CrimeMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
