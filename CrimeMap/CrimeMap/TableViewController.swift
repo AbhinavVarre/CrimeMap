@@ -65,6 +65,14 @@ class TableViewController: UIViewController, UITableViewDelegate,UITableViewData
         return cell
     }
     
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+         let main = UIStoryboard(name: "Main", bundle: nil)
+         let annotationView = main.instantiateViewController(withIdentifier: "AnnotationInfoViewController") as! AnnotationInfoViewController
+         let cell = tableView.cellForRow(at: indexPath) as! TableViewCell
+         self.present(annotationView, animated: true)
+         annotationView.setLabelAndDesc(label: cell.IncidentLabel!.text!, desc: cell.DetailLabel!.text!)
+    }
+    
     
     func findAddressFromCoords(location:CLLocationCoordinate2D, cell: TableViewCell)  {
         let geoCoder = CLGeocoder()
