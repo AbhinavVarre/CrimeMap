@@ -40,6 +40,8 @@ This app allows users to interact and digest real - time crime data and police r
 
 **Required Must-have Stories**
 
+- [X] The app is connect with a database recording data.
+- [x] User is able to check the incidents through table view
 - [x] An interactive map that users can drag, zoom in on, etc.
 - [x] User is able to sign up, sign in and sign out.
 - [x] User is able to post incidents.
