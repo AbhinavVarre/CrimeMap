@@ -23,10 +23,12 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
         
         
     }
+   
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
