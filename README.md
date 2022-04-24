@@ -49,8 +49,8 @@ This app allows users to interact and digest real - time crime data and police r
 
 **Optional Nice-to-have Stories**
 
-- [ ] Location of Crime is displayed as an address
-- [ ] User can post a crime by dragging a pin around a location
+- [x] Location of Crime is displayed as an address
+- [x] User can post a crime by dragging a pin around a location
 - [ ] User can choose to post a crime b selecting their current location
 - [ ] User is able to update/ comment the incidents.
 - [ ] Pictures related to the incident could shows on the map page
