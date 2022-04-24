@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		381A16452814D1B100B69156 /* UserPinPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381A16442814D1B100B69156 /* UserPinPostViewController.swift */; };
 		38A214D3280ACE0F00BADF56 /* AnnotationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A214D2280ACE0F00BADF56 /* AnnotationInfoViewController.swift */; };
 		38A6A9DF280E06C9005ED18A /* Crime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A6A9DE280E06C9005ED18A /* Crime.swift */; };
 		38EE79B72813DB5800D4421A /* CustomAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EE79B62813DB5800D4421A /* CustomAnnotation.swift */; };
@@ -49,6 +50,7 @@
 		05ADC8DC01901A6493C4BC0A /* Pods-CrimeMapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMapTests.release.xcconfig"; path = "Target Support Files/Pods-CrimeMapTests/Pods-CrimeMapTests.release.xcconfig"; sourceTree = "<group>"; };
 		152225FCCBE7524292417550 /* Pods-CrimeMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMapTests.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMapTests/Pods-CrimeMapTests.debug.xcconfig"; sourceTree = "<group>"; };
 		16212FF1A90E9D1607730BE4 /* Pods-CrimeMap-CrimeMapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CrimeMap-CrimeMapTests.debug.xcconfig"; path = "Target Support Files/Pods-CrimeMap-CrimeMapTests/Pods-CrimeMap-CrimeMapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		381A16442814D1B100B69156 /* UserPinPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPinPostViewController.swift; sourceTree = "<group>"; };
 		38A214D2280ACE0F00BADF56 /* AnnotationInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnnotationInfoViewController.swift; sourceTree = "<group>"; };
 		38A6A9DE280E06C9005ED18A /* Crime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crime.swift; sourceTree = "<group>"; };
 		38EE79B62813DB5800D4421A /* CustomAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnnotation.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 				8CDD0D2A27FE7D5900BDB4EC /* LaunchScreen.storyboard */,
 				8CDD0D2D27FE7D5900BDB4EC /* Info.plist */,
 				38A6A9DE280E06C9005ED18A /* Crime.swift */,
+				381A16442814D1B100B69156 /* UserPinPostViewController.swift */,
 			);
 			path = CrimeMap;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				8CDD0D5227FE866200BDB4EC /* LoginViewController.swift in Sources */,
 				8CDD0D2027FE7D5600BDB4EC /* AppDelegate.swift in Sources */,
 				38A214D3280ACE0F00BADF56 /* AnnotationInfoViewController.swift in Sources */,
+				381A16452814D1B100B69156 /* UserPinPostViewController.swift in Sources */,
 				8CDD0D5627FE8AA600BDB4EC /* MapViewController.swift in Sources */,
 				38EE79B72813DB5800D4421A /* CustomAnnotation.swift in Sources */,
 				38A6A9DF280E06C9005ED18A /* Crime.swift in Sources */,
@@ -652,7 +656,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.albert81915929.CrimeMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhinav.CrimeMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -682,7 +686,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.albert81915929.CrimeMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abhinav.CrimeMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

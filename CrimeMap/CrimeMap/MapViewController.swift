@@ -10,10 +10,12 @@ import MapKit
 import CoreLocation
 import Parse
 
+var annotationsArrayGlobal = [CustomAnnotation]()
+
 class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     
-
+    
     @IBOutlet weak var mapView: MKMapView!
     
     var posts = [PFObject]()
@@ -23,7 +25,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         super.viewDidLoad()
         
         
-    
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -35,7 +37,14 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         location.startUpdatingLocation()
         mapView.reloadInputViews()
         
-       
+        
+    }
+  
+    @IBAction func addPinTransition(_ sender: Any) {
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let userPinPostViewController = main.instantiateViewController(withIdentifier: "UserPinPostViewController") as! UserPinPostViewController
+        present(userPinPostViewController, animated: true)
+        
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -48,7 +57,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     func renderLocation( location: CLLocation) {
         
-  
+        
         //The following makes it so that the map zooms in on the users location by default
         let coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude, longitude: location.coordinate.longitude)
         //Changing the delta values below adjusts the level of zoom - smaller means more zoomed in
@@ -73,18 +82,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         }catch {
             print("didn't work")
         }
-//        query.findObjectsInBackground(){
-//            (posts, error) in
-//            if posts != nil{
-//                self.posts = posts!
-//                print("counts: \(self.posts.count)")
-//            }
-//            else{
-//                print("query didn't work: \(error)")
-//            }
-//        }
+        
         print("counts: \(self.posts.count)")
-
+        
         var annotationArr = [CustomAnnotation]()
         
         print("the count of posts: \(self.posts.count)")
@@ -94,17 +94,17 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
             annotationToBeAdded.coordinate = CLLocationCoordinate2D(latitude: Double(post["Latitude"] as! String)! , longitude: Double(post["Longtitude"] as! String)!)
             print("Lat \(Double(post["Latitude"] as! String)!)")
             print("Long \(Double(post["Longtitude"] as! String)!)")
-
+            
             annotationToBeAdded.title = post["incident"] as! String
             annotationToBeAdded.crimeDesc = post["detail"] as! String
             //mapView.addAnnotation(annotationToBeAdded)
             annotationArr.append(annotationToBeAdded)
-
+            
             //annotationToBeAdded.id = post["objectId"]  as! String
             //mapView.addAnnotation(annotationToBeAdded)
         }
         
-    
+        
         
         let sampleAnnotationPin: CustomAnnotation = CustomAnnotation()
         sampleAnnotationPin.coordinate = CLLocationCoordinate2D(latitude: location.coordinate.latitude + 0.001, longitude: location.coordinate.longitude + 0.001)
@@ -115,9 +115,10 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         //mapView.addAnnotation(sampleAnnotationPin)
         annotationArr.append(sampleAnnotationPin)
         mapView.addAnnotations(annotationArr)
+        annotationsArrayGlobal = annotationArr
         print("arr: \(annotationArr.count)")
         print("num of annots: \(mapView.annotations.count)")
-
+        
         
     }
     
@@ -126,32 +127,32 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         let main = UIStoryboard(name: "Main", bundle: nil)
         let loginViewController = main.instantiateViewController(withIdentifier: "LoginViewController")
         guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let
-        delegate = windowScene.delegate as? SceneDelegate else {return}
+                delegate = windowScene.delegate as? SceneDelegate else {return}
         delegate.window?.rootViewController = loginViewController
         self.present(loginViewController, animated: true)
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView)
+    {
+        if let crimeAnnotation = view.annotation as? CustomAnnotation
         {
-            if let crimeAnnotation = view.annotation as? CustomAnnotation
-            {
-                let annotationTitle = crimeAnnotation.title
-                print("User tapped on annotation with title: \(annotationTitle)")
-                let main = UIStoryboard(name: "Main", bundle: nil)
-                let annotationView = main.instantiateViewController(withIdentifier: "AnnotationInfoViewController") as! AnnotationInfoViewController
-                self.present(annotationView, animated: true)
-                annotationView.setLabelAndDesc(label: annotationTitle!, desc: crimeAnnotation.crimeDesc! )
+            let annotationTitle = crimeAnnotation.title
+            print("User tapped on annotation with title: \(annotationTitle)")
+            let main = UIStoryboard(name: "Main", bundle: nil)
+            let annotationView = main.instantiateViewController(withIdentifier: "AnnotationInfoViewController") as! AnnotationInfoViewController
+            self.present(annotationView, animated: true)
+            annotationView.setLabelAndDesc(label: annotationTitle!, desc: crimeAnnotation.crimeDesc! )
             
-            }
         }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
-
+    /*
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }

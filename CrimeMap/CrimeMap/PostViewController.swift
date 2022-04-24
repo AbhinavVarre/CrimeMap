@@ -10,11 +10,11 @@ import Parse
 
 class PostViewController: UIViewController {
     
-
     @IBOutlet weak var LocationField: UITextField!
     @IBOutlet weak var IncidentField: UITextField!
     @IBOutlet weak var DetailField: UITextField!
     @IBOutlet weak var LongtitudeField: UITextField!
+    
     
     
     @IBAction func onSubmitButton(_ sender: Any) {
@@ -34,23 +34,24 @@ class PostViewController: UIViewController {
         }
         
         self.dismiss(animated: true)
+        self.presentingViewController?.dismiss(animated: false)
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
