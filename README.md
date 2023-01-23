@@ -30,7 +30,7 @@ This app allows users to interact and digest real - time crime data and police r
 - **Story:** Allow user to check the criminal incident happening or happened recently.
              Allow user to report the criminal incident. 
 
-- **Market:** Anyone who lives in NYC or is curious about NYC crime data can use this app. Users can check location and type of crime committed in the map. 
+- **Market:** Anyone that is curious or concerned about crime data can use this app. Users can check location and type of crime committed in the map. 
 - **Habit:** Users can look at crime incidents that have happened throughout the day. Users can explore crime records in any area around the city. 
 - **Scope:** The initial scope of the app(v1) is to read data from the api and create/display a map with indications of calls that refreshes appropriately. V2 entails the addition of being able to interact with the red dots - this would display more information about the incident. V3 includes the addition of user reports, where the user can report and incident and this is added to the map along with any media the user decides to upload.
 
